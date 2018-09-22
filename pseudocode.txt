@@ -1,0 +1,91 @@
+page on load:
+    hide all main content
+
+declare and initialize variables:
+    -counter n for how many questions were asked
+    -number of incorrect answers
+    -number of correct answers
+    -score (each question is worth an unique score, adding up to 1 vigintillion)
+
+declare and initialize array of objects, with each object representing a questions
+
+object {
+    number:
+    question: 
+    choice1:
+    choice2:
+    choice3:
+    choice4:
+    correctChoice: 
+}
+
+timer {
+    time: 20
+    method decrement () {
+        time--
+    }
+}
+
+function nextQuestion for changing to the next page
+    -takes in a number as argument, with n being the number of questions asked
+    -hide announcement and message
+    display corresponding question object on html
+    -$(#question-num), $(#question), $(#choice1) etc
+
+    timer.time = timer.time 
+    setTimeout(resultScreen(false, n), time * )
+    setInterval(timedecrement(), 1000)
+
+    choice.on click:
+        if $(this).text === correct answer:
+            -clear timeup
+            -call resultScreen(true)
+        else:
+            -clear timeUp
+            -call resultScreen(false)
+
+function resultScreen for changing to a victory or defeat screen 
+    -takes a boolean argument
+    clear interval
+    -hide choices and time remaining
+    if true:
+        adds to score
+        change to congratulations screen
+        -change announcement and message
+        -show congratulations and message
+    else:
+        change to wrong answer screen
+        -change announcement and message
+        -show wrong answer and correct choice
+
+    increment n by 1
+    if n === 10:
+        -hide main content
+        -show score, correct, and incorrect
+        -show start button and change text to Play Again!
+        -reset all variables
+    else:
+        calls function changing to next page and passes number argument to it
+        -nextQ(n)
+
+start button.on click:
+    -hide start button
+    -show main content
+    display corresponding question object on html
+    -$(#question-num), $(#question), $(#choice1) etc
+
+    timer.time = timer.time 
+    setTimeout(resultScreen(false, n), time * )
+    setInterval(timedecrement(), 1000)
+
+choice.on click:
+    if $(this).text === correct answer:
+        -clear timeup
+        -increment correct
+        -call resultScreen(true)
+    else:
+        -clear timeUp
+        -increment incorrect
+        -call resultScreen(false)
+
+
