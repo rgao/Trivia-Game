@@ -78,13 +78,14 @@ $(document).ready(function() {
     $("#start").on("click", function() {
 
         $("#start").hide();
+        $(".main").show();
+        $("#time-container").show();
         nextQuestion(questionNum);
     });
 
     // displays next question content onto html
     var nextQuestion = function(questionNum) {
 
-        $(".main").show();
         $(".main-screen").show();
         $(".result-screen").hide();
 
@@ -134,6 +135,7 @@ $(document).ready(function() {
         questionNum++
         if (questionNum === questionArr.length) {
 
+            $("#time-container").hide()
             timer.reset();
 
             impendingDoom = setTimeout(function() {
