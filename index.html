@@ -15,53 +15,54 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Nova+Slim" rel="stylesheet">
 
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
 
-        <header>
-            <h1>Who Wants to be a Vigintillionaire?!</h1>
+        <header class="row justify-content-center mt-3 mb-5">
+            <h1 class='text-center'>Who Wants to be a Vigintillionaire?!</h1>
         </header>
 
         <div class="main">
 
-            <div class="row result-screen">
-                <h2 id="announcement"></h2>
+            <div class="row result-screen justify-content-center">
+                <h2 class='text-center' id="announcement"></h2>
             </div>
 
-            <div class="row" id="time-container">
-                <h3><span id="time-left-msg">Time Remaining: </span><span id="time-left"></span> Seconds</h3>
+            <div class="row justify-content-center my-5" id="time-container">
+                <h3 class='text-center'><span id="time-left-msg">Time Remaining: </span><span id="time-left"></span> Seconds</h3>
             </div>
 
-            <div class="row" id="q-container">
-                <h3>Question # <span id="question-num"></span>: <span id="question"></span></h3>
+            <div class="row justify-content-center my-3" id="q-container">
+                <h3 class="text-center">Question # <span id="question-num"></span>: <span class="text-center" id="question"></span></h3>
             </div>
 
-            <div class="row result-screen">
-                <h3 id="message"></h3>
+            <div class="row result-screen justify-content-center my-5">
+                <h5 class="text-center" id="message"></h3>
             </div>
 
             <div class="row main-screen">
 
-                <div class="col">
-                    <p class="row choice">
+                <div class="col justify-content-center mt-4">
+                    <p class="row choices justify-content-center" id="c1">
                         A: <span class="ml-1" id="choice1"></span>
                     </p>
 
-                    <p class="row choices">
+                    <p class="row choices justify-content-center" id="c2">
                         B: <span class="ml-1" id="choice2"></span>
                     </p>
 
-                    <p class="row choices">
+                    <p class="row choices justify-content-center" id="c3">
                         C: <span class="ml-1" id="choice3"></span>
                     </p>
 
-                    <p class="row choices">
+                    <p class="row choices justify-content-center" id="c4">
                         D: <span class="ml-1" id="choice4"></span>
                     </p>
 
-                    <p class="row choices">
+                    <p class="row choices justify-content-center" id="c5">
                         F: <span class="ml-1" id="choice5"></span>
                     </p>
                 </div>
@@ -70,16 +71,20 @@
 
         </div>
 
-        <div class="row final-screen">
-            <h2>You have reached the light at the end of the tunnel!</h2>
-            <p id="correct"></p>
-            <p id="incorrect"></p>
-            <p id="score"></p>
+        <div class="row final-screen justify-content-center">
+            <div class="col">
+                <h2 class="text-center my-5" id="end-msg">You have reached the light at the end of the tunnel!</h2>
+                <h4 class="text-center" id="correct"></p>
+                <h4 class="text-center" id="incorrect"></p>
+                <h4 class="text-center my-5" id="score"></p>
+            </div>
         </div>
 
-        <div class="row" id="btn-container">
-            <button class="btn btn-primary" id="start">Start!</button>
-            <button class="btn btn-primary" id="final">Final Result</button>
+        <div class="text-center my-5" id="btn-container">
+            <img class="row mx-auto my-5" id="start-img" src="assets/images/atomic.jpg">
+            <p class="mx-auto my-5" id="start-msg">Click Start to earn up to $1 Vigintillion and begin your descent into the darkest depths...</p>
+            <button class="btn row btn-primary" id="start">Start!</button>
+            <button class="btn row btn-primary" id="final">Final Result</button>
         </div>
 
     </div>

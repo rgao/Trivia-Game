@@ -1,0 +1,47 @@
+body {
+    font-family: 'Nova Slim', cursive;
+}
+
+#q-container {
+    font-family: "Impact";
+}
+
+header, #time-container, #end-msg {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+}
+
+.choices {
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#c1:hover {
+    background: radial-gradient(darkred, white);
+    color: #ffffff;
+}
+
+#c2:hover {
+    background: radial-gradient(gold, white);
+}
+
+#c3:hover {
+    background: radial-gradient(green, white);
+    color: #ffffff;
+}
+
+#c4:hover {
+    background: radial-gradient(blue, white);
+    color: #ffffff;
+}
+
+#c5:hover {
+    background: radial-gradient(purple, white);
+    color: #ffffff;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #666666;
+    height: 40px;
+}

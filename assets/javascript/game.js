@@ -176,6 +176,8 @@ $(document).ready(function() {
     $("#start").on("click", function() {
 
         $("#btn-container").hide();
+        $("#start-img").hide();
+        $("#start-msg").hide();
         $(".final-screen").hide();
         $(".main").show();
         $("#time-container").show();
@@ -210,7 +212,7 @@ $(document).ready(function() {
     var resultScreen = function(result) {
 
         timer.reset();
-        timer.time = 159;
+        timer.time = 999;
         $("#time-left").text(timer.time);
         display = setInterval(timer.countdown, 1000);
 
@@ -221,10 +223,12 @@ $(document).ready(function() {
         if (result === "correct") {
             score += 100;
             correct++;
+            $("#announcement").css("color", "green");
             $("#announcement").text("CORRECT!");
             $("#message").text(questionArr[questionNum].correctMsg);
         
         } else {
+            $("#announcement").css("color", "red");
             incorrect++;
             if (result === "incorrect") {
                 $("#announcement").text("INCORRECT!");
@@ -252,7 +256,7 @@ $(document).ready(function() {
                 $(".final-screen").show();
                 $("#correct").text("You answered " + correct + " questions correctly.");
                 $("#incorrect").text("You answered " + incorrect + " questions incorrectly.");
-                $("#score").text("Your final score is " + score);
+                $("#score").text("Your final reward is $" + score);
 
                 $("#final").hide();
                 $("#start").show();
@@ -262,7 +266,7 @@ $(document).ready(function() {
                 correct = 0;
                 incorrect = 0;
                 score = 0;
-            }, 159000);
+            }, 999000);
 
         } else {
             
@@ -270,7 +274,7 @@ $(document).ready(function() {
 
             impendingDoom = setTimeout(function() {
                 nextQuestion(questionNum);
-            }, 159000);
+            }, 999000);
             $("#start").text("Next Question");
         };
     };
