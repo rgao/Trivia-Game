@@ -79,6 +79,13 @@ header, #time-container, #end-msg {
     border: 3px double gold;
 }
 
+.final-screen {
+    color: gold;
+    border: 3px double gold;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
 footer {
     color: #ffffff;
     background-color: #666666;
