@@ -25,6 +25,11 @@ header, #time-container, #end-msg {
     font-weight: bold;
 }
 
+#announcement {
+    width: 50%;
+    border-radius: 50%;
+}
+
 #time-container {
     border: 3px double gold;
     background-color: gray;
@@ -79,11 +84,26 @@ header, #time-container, #end-msg {
     border: 3px double gold;
 }
 
-.final-screen {
+#score {
     color: gold;
-    border: 3px double gold;
-    background-color: #ffffff;
+    border: 3px solid gold;
     border-radius: 25px;
+    background-color: #aaaaaa;
+}
+
+.final-screen {
+    color: orange;
+    border: 3px double gold;
+    background-color: #eeeeee;
+    border-radius: 25px;
+}
+
+#correct {
+    color: green;
+}
+
+#incorrect {
+    color: orangered;
 }
 
 footer {
