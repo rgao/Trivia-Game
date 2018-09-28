@@ -226,7 +226,8 @@ $(document).ready(function() {
             $("#announcement").css("color", "green");
             $("#announcement").text("CORRECT!");
             $("#message").text(questionArr[questionNum].correctMsg);
-        
+            $("#message").css("color", "green")
+
         } else {
             $("#announcement").css("color", "red");
             incorrect++;
@@ -236,6 +237,7 @@ $(document).ready(function() {
                 $("#announcement").text("TIME'S UP!");
             };
             $("#message").text(questionArr[questionNum].incorrectMsg);
+            $("#message").css("color", "orangered")
         };
 
         // increment question number

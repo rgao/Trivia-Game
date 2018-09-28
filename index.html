@@ -22,7 +22,7 @@
     <div class="container">
 
         <header class="row justify-content-center mt-3 mb-5">
-            <h1 class='text-center'>Who Wants to be a Vigintillionaire?!</h1>
+            <h1 class='col text-center'>Who Wants to be a Vigintillionaire?!</h1>    
         </header>
 
         <div class="main">
@@ -31,19 +31,19 @@
                 <h2 class='text-center' id="announcement"></h2>
             </div>
 
-            <div class="row justify-content-center my-5" id="time-container">
+            <div class="row justify-content-center my-5 pt-1" id="time-container">
                 <h3 class='text-center'><span id="time-left-msg">Time Remaining: </span><span id="time-left"></span> Seconds</h3>
             </div>
 
-            <div class="row justify-content-center my-3" id="q-container">
+            <div class="row justify-content-center my-3 pt-1" id="q-container">
                 <h3 class="text-center">Question # <span id="question-num"></span>: <span class="text-center" id="question"></span></h3>
             </div>
 
             <div class="row result-screen justify-content-center my-5">
-                <h5 class="text-center" id="message"></h3>
+                <h5 class="text-center p-3" id="message"></h3>
             </div>
 
-            <div class="row main-screen">
+            <div class="row main-screen" id="choice-container">
 
                 <div class="col justify-content-center mt-4">
                     <p class="row choices justify-content-center" id="c1">
@@ -82,9 +82,9 @@
 
         <div class="text-center my-5" id="btn-container">
             <img class="row mx-auto my-5" id="start-img" src="assets/images/atomic.jpg">
-            <p class="mx-auto my-5" id="start-msg">Click Start to earn up to $1 Vigintillion and begin your descent into the darkest depths...</p>
-            <button class="btn row btn-primary" id="start">Start!</button>
-            <button class="btn row btn-primary" id="final">Final Result</button>
+            <h4 class="mx-auto my-5 pt-2" id="start-msg">Click Start to earn up to $1 Vigintillion and begin your descent into the darkest depths...</h4>
+            <button class="btn row btn-lg btn-success" id="start">Start!</button>
+            <button class="btn row btn-lg btn-primary" id="final">Final Result</button>
         </div>
 
     </div>

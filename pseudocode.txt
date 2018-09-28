@@ -88,6 +88,10 @@ choice.on click:
         -increment incorrect
         -call resultScreen(false)
 
-  
+  css stuff to do:
+  vingitillion
+  extra questions
+  audio
+  background pics
 
 
