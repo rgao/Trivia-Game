@@ -12,6 +12,10 @@
 
     <link rel="icon" type="image/jpg" href="assets/images/atomic.jpg">
 
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
     <div class="container-fluid">
@@ -30,7 +34,7 @@
                 <h3><span id="time-left-msg">Time Remaining: </span><span id="time-left"></span> Seconds</h3>
             </div>
 
-            <div class="row">
+            <div class="row" id="q-container">
                 <h3>Question # <span id="question-num"></span>: <span id="question"></span></h3>
             </div>
 
@@ -40,32 +44,42 @@
 
             <div class="row main-screen">
 
-                <p class="row choices">
-                    A: <span id="choice1"></span>
-                </p>
+                <div class="col">
+                    <p class="row choice">
+                        A: <span class="ml-1" id="choice1"></span>
+                    </p>
 
-                <p class="row choices">
-                    B: <span id="choice2"></span>
-                </p>
+                    <p class="row choices">
+                        B: <span class="ml-1" id="choice2"></span>
+                    </p>
 
-                <p class="row choices">
-                    C: <span id="choice3"></span>
-                </p>
+                    <p class="row choices">
+                        C: <span class="ml-1" id="choice3"></span>
+                    </p>
 
-                <p class="row choices">
-                    D: <span id="choice4"></span>
-                </p>
+                    <p class="row choices">
+                        D: <span class="ml-1" id="choice4"></span>
+                    </p>
 
-                <p class="row choices">
-                    F: <span id="choice5"></span>
-                </p>
+                    <p class="row choices">
+                        F: <span class="ml-1" id="choice5"></span>
+                    </p>
+                </div>
 
             </div>
 
         </div>
 
-        <div class="row">
-            <p id="start">Start!</p>
+        <div class="row final-screen">
+            <h2>You have reached the light at the end of the tunnel!</h2>
+            <p id="correct"></p>
+            <p id="incorrect"></p>
+            <p id="score"></p>
+        </div>
+
+        <div class="row" id="btn-container">
+            <button class="btn btn-primary" id="start">Start!</button>
+            <button class="btn btn-primary" id="final">Final Result</button>
         </div>
 
     </div>

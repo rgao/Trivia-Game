@@ -89,7 +89,6 @@ choice.on click:
         -call resultScreen(false)
 
     debug:
-    undefined
-    reset variables / play again
+    show final numbers
 
 
