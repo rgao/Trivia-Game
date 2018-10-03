@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    document.getElementById("bg-audio").play();
     
     // hide main content and show only start button
     $(".main").hide();
@@ -129,7 +131,7 @@ $(document).ready(function() {
         choice3: "Star-like with deuterium fusion at the core",
         choice4: "Primarily gas with a molten metallic hydrogen core",
         choice5: "Primarily gas with a plasma iron core",
-        correctChoice: "White Dwarf",
+        correctChoice: "Primarily gas with a molten metallic hydrogen core",
         correctMsg: "Immense pressure exists within the interior of gas giants; the unique pressure and temperature combinations give rise to rare materials; liquid metallic hydrogen may be mixing with a small rocky core.",
         incorrectMsg: "The correct choice is 'Primarily gas with a molten metallic hydrogen core.' Hydrogen changes state at such unique temperatures and pressure, giving rise to a liquid metallic form, possibly mixing with a small rocky core.",    
         reward: 64718,
@@ -189,7 +191,7 @@ $(document).ready(function() {
         choice3: "Mass-energy of relativistic particles",
         choice4: "Energy permeating throughout space, hypothesized to initiate the Big Bang",
         choice5: "Energy permeating throughout space, hypothesized to accelerate universal expansion",
-        correctChoice: "Energy permeating throughout space, responsible for universal expansion",
+        correctChoice: "Energy permeating throughout space, hypothesized to accelerate universal expansion",
         correctMsg: "Dark Energy makes up nearly 70% of the universe, with the remaining ~30% belonging to the mass-energy of dark and ordinary matter.",
         incorrectMsg: "The correct answer is 'Energy permeating throughout space, hypothesized to accelerate universal expansion.' We do not know the nature of dark energy; it is the term we ascribe to the energy gradient that causes the accelerated expansion of the universe.",
         reward: 49586014536,
@@ -327,6 +329,7 @@ $(document).ready(function() {
                 $("#start").text("Play Again!");
 
                 if (correct === questionArr.length) {
+                    score = "1 Vigintillion";
                     $("#final-score").text("You answered all the questions correctly! Congratulations, you're a Vigintillionaire ($10^63)!");
                 } else {
                     $("#final-score").text("Your final reward is $" + score + ". You did not get all questions correct, so you are not a Vigintillionaire.");
@@ -335,8 +338,8 @@ $(document).ready(function() {
                 questionNum = 0;
                 correct = 0;
                 incorrect = 0;
-                score = 0;
                 $("#score").text("$0");
+                score = 0;
             }, 999000);
 
         } else {
@@ -381,6 +384,7 @@ $(document).ready(function() {
         $("#start").text("Play Again!");
 
         if (correct === questionArr.length) {
+            score = "1 Vigintillion";
             $("#final-score").text("You answered all the questions correctly! Congratulations, you're a Vigintillionaire ($10^63)!");
         } else {
             $("#final-score").text("Your final reward is $" + score + ". You did not get all questions correct, so you are not a Vigintillionaire.");
@@ -389,7 +393,7 @@ $(document).ready(function() {
         questionNum = 0;
         correct = 0;
         incorrect = 0;
+        $("#score").text(score);
         score = 0;
-        $("#score").text("$0");
     });
 })
