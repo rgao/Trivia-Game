@@ -123,6 +123,21 @@ $(document).ready(function() {
     var q7 = {
 
         number: 7,
+        questionStr: "Which of the following best describes the theorized interior of Jupiter and Saturn?",
+        choice1: "Gas all the way through",
+        choice2: "Primarily gas with a small solid core with a surface",
+        choice3: "Star-like with deuterium fusion at the core",
+        choice4: "Primarily gas with a molten metallic hydrogen core",
+        choice5: "Primarily gas with a plasma iron core",
+        correctChoice: "White Dwarf",
+        correctMsg: "Immense pressure exists within the interior of gas giants; the unique pressure and temperature combinations give rise to rare materials; liquid metallic hydrogen may be mixing with a small rocky core.",
+        incorrectMsg: "The correct choice is 'Primarily gas with a molten metallic hydrogen core.' Hydrogen changes state at such unique temperatures and pressure, giving rise to a liquid metallic form, possibly mixing with a small rocky core.",    
+        reward: 64718,
+    };
+
+    var q8 = {
+
+        number: 8,
         questionStr: "Electron degeneracy pressure is the primary support in hydrostatic equilibrium for which of the following astronomical objects?",
         choice1: "Average main sequence stars, such as the Sun",
         choice2: "Red Supergiant",
@@ -132,12 +147,27 @@ $(document).ready(function() {
         correctChoice: "White Dwarf",
         correctMsg: "The ultimate fate of our Sun is to become a white dwarf after its red giant phase ends in a nova explosion. White dwarves are forever condemned to a dark, cold end as it does not produce nuclear fusion.",
         incorrectMsg: "The correct choice is 'White Dwarf.' Average main sequence stars such as our Sun is primarily supported by gas and radiation pressure. White dwarves are much smaller and denser, relying on electron degeneracy to counteract against its inward gravity.",    
-        reward: 25871,
+        reward: 258716,
     };
 
-    var q8 = {
+    var q9 = {
 
-        number: 8,
+        number: 9,
+        questionStr: "Jupiter is significant to the Sun in which of the following ways?",
+        choice1: "It exerts a noticeable tidal force onto the Sun",
+        choice2: "It is primarily responsible for causing the Solar System center of mass to lie outside of the Sun",
+        choice3: "It accretes solar discharges into its ring system",
+        choice4: "It will eventually be consumed by the Sun, causing the Sun to inflate further into a Red Hypergiant",
+        choice5: "Its formation derailed the Sun from initializing as an O-type main sequence star",
+        correctChoice: "It is primarily responsible for causing the Solar System center of mass to lie outside of the Sun",
+        correctMsg: "Technically, we live in a 2-body system consisting of Jupiter and the Sun because the Sun orbits a point of space outside of itself!",
+        incorrectMsg: "The correct choice is 'It is primarily responsible for causing the Solar System center of mass to lie outside the Sun.' Jupiter's mass is more than 2.5 times that of all other planets combined, and is large enough to significantly affect the center of mass.",    
+        reward: 38412097,
+    };
+
+    var q10 = {
+
+        number: 10,
         questionStr: "Why is dark matter known as such?",
         choice1: "It is dark in color",
         choice2: "It doesn't interact with electromagnetic force",
@@ -149,10 +179,25 @@ $(document).ready(function() {
         incorrectMsg: "The correct choice is 'It doesn't interact with electromagnetic force.' Dark matter is dark because they do not interact, or interact insignificantly, with the electromagnetic force. We and our instruments rely on electromagnetic detection (including light) to receive any form of information.",
         reward: 935972586,
     };
-    
-    var q9 = {
 
-        number: 9,
+    var q11 = {
+
+        number: 11,
+        questionStr: "Dark Energy is best described as:",
+        choice1: "Energy emitted by dark matter",
+        choice2: "Gravitational energy",
+        choice3: "Mass-energy of relativistic particles",
+        choice4: "Energy permeating throughout space, hypothesized to initiate the Big Bang",
+        choice5: "Energy permeating throughout space, hypothesized to accelerate universal expansion",
+        correctChoice: "Energy permeating throughout space, responsible for universal expansion",
+        correctMsg: "Dark Energy makes up nearly 70% of the universe, with the remaining ~30% belonging to the mass-energy of dark and ordinary matter.",
+        incorrectMsg: "The correct answer is 'Energy permeating throughout space, hypothesized to accelerate universal expansion.' We do not know the nature of dark energy; it is the term we ascribe to the energy gradient that causes the accelerated expansion of the universe.",
+        reward: 49586014536,
+    };        
+    
+    var q12 = {
+
+        number: 12,
         questionStr: "Of the following nuts, which is most likely to be buried (as opposed to eaten immediately) by a friendly fox squirrel?",
         choice1: "Almond",
         choice2: "Brazil Nut",
@@ -162,12 +207,12 @@ $(document).ready(function() {
         correctChoice: "Almond",
         correctMsg: "Squirrels bury nuts to save them for later. For some reason, they tend to bury almonds even if they're not full, presumably because either almonds resemble raw nuts or have high nutritional value for winter.",
         incorrectMsg: "The correct choice is 'Almond.' Peanuts, cashews, and brazil nuts are all loved by squirrels. Raw acorns will be buried, but ripe ones tend to be eaten. For some reason, squirrels sometimes bury almonds even if they're not full.",
-        reward: 144398254969,
+        reward: 1443982549692,
     };
 
-    var q10 = {
+    var q13 = {
 
-        number: 10,
+        number: 13,
         questionStr: "Which of the following phrases is grammatically incorrect?",
         choice1: "'It's just that that person likes selling seashells by the seashore.",
         choice2: "'The reason is because Shelton likes selling seashells by the seashore.'",
@@ -180,7 +225,7 @@ $(document).ready(function() {
         reward: 1,
     };
 
-    var questionArr = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
+    var questionArr = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13];
 
     // when start button clicked, hide start button and starts with 1st question
     $("#start").on("click", function() {
