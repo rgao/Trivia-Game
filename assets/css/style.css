@@ -4,7 +4,12 @@ body {
     background-size: cover;
 }
 
-header, #start-msg, #time-container {
+header {
+    color: magenta;
+    font-family: "Impact";
+}
+
+#start-msg, #time-container {
     color: gold;
     font-weight: bold;
 }
@@ -20,7 +25,7 @@ header, #start-msg, #time-container {
     height: 48px;
 }
 
-header, #time-container, #end-msg {
+#time-container, #end-msg {
     font-family: 'Cinzel Decorative', cursive;
     font-weight: bold;
 }
