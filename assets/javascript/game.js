@@ -278,6 +278,7 @@ $(document).ready(function() {
         $("#btn-container").show()
         
         if (result === "correct") {
+            document.getElementById("winning").play();
             score += questionArr[questionNum].reward;
             correct++;
             $("#announcement").css("color", "green");
@@ -287,6 +288,7 @@ $(document).ready(function() {
             $("#message").css("color", "green")
 
         } else {
+            document.getElementById("elephant").play();
             $("#announcement").css("color", "red");
             $("#announcement").css("background", "radial-gradient(orangered, white");
             incorrect++;
@@ -384,9 +386,11 @@ $(document).ready(function() {
         $("#start").text("Play Again!");
 
         if (correct === questionArr.length) {
+            document.getElementById("winning").play();
             score = "1 Vigintillion";
             $("#final-score").text("You answered all the questions correctly! Congratulations, you're a Vigintillionaire ($10^63)!");
         } else {
+            document.getElementById("dying").play();
             $("#final-score").text("Your final reward is $" + score + ". You did not get all questions correct, so you are not a Vigintillionaire.");
         };
 
