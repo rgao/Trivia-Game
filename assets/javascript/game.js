@@ -252,6 +252,7 @@ $(document).ready(function() {
         $(".main").show();
         $("#time-container").show();
         $("#q-container").show()
+        $("#score").text("$0");
         nextQuestion(questionNum);
     });
 
@@ -357,7 +358,7 @@ $(document).ready(function() {
                 questionNum = 0;
                 correct = 0;
                 incorrect = 0;
-                $("#score").text("$0");
+                $("#score").text(score);
                 score = 0;
             }, 999000);
 
@@ -407,7 +408,7 @@ $(document).ready(function() {
             score = "1 Vigintillion";
             $("#final-score").text("You answered all the questions correctly! Congratulations, you're a Vigintillionaire ($10^63)!");
         } else {
-            document.getElementById("dying").play();
+            document.getElementById("dying-audio").play();
             $("#final-score").text("Your final reward is $" + score + ". You did not get all questions correct, so you are not a Vigintillionaire.");
         };
 
